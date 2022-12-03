@@ -3,11 +3,13 @@ import 'dart:io';
 
 import 'package:aoc_2022/day01.dart' as day01;
 import 'package:aoc_2022/day02.dart' as day02;
+import 'package:aoc_2022/day03.dart' as day03;
 
 void main(List<String> args) async {
   var days = [ 
     day01.solve,
     day02.solve,
+    day03.solve,
   ];
   var pos = args.length > 0 ? int.parse(args[0]) : days.length;
   var file = "problems/day{:02d}.txt".format(pos);
